@@ -1,0 +1,96 @@
+:root {
+    --background-color: #dfdac9;
+    --span-color: #171065;  
+    --text-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    height: 100%;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 25px 100px;
+}
+
+header {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer {
+    position: fixed;
+    font-size: 15px;
+    color: var(--span-color);
+    font-weight: 600;
+    right: 10px;
+    bottom: 10px;
+}
+
+.introduction h1 {
+    font-size: 5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.introduction span {
+    color: var(--span-color);
+}
+
+.main-contents {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem
+}
+
+.detail {
+    display: flex;
+    width: 50%;
+    gap: 1.5rem;
+}
+
+.detail img {
+    width: 50%;
+}
+
+.detail .content h3 {
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.detail .content p {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 120%;
+        padding: 10px 50px;
+    }
+    .main-contents {
+        display: block;
+        width: 100%;
+    }
+    .detail {
+        display: block;
+        width: 100%;
+    }
+    .detail img {
+        width: 100%;
+    }
+    footer {
+        font-size: 120%;
+    }
+}
